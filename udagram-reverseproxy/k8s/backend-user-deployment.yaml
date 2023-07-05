@@ -1,18 +1,21 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
     service: backend-user
   name: backend-user
 spec:
-  replicas: 1
+  selector:
+    matchLabels:
+      service: backend-user
+  replicas: 2
   template:
     metadata:
       labels:
         service: backend-user
     spec:
       containers:
-      - image: vikrambedi/rest-api-user
+      - image: nguyenbason/udagram-api-user
         name: backend-user 
         imagePullPolicy: Always  
         resources:
@@ -52,7 +55,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: env-secret
-              key: POSTGRESS_USERNAME
+              key: POSTGRESS_USERNAME              
       restartPolicy: Always
 
 
