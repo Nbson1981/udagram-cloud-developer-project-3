@@ -15,6 +15,6 @@ before_install:
   - chmod +x ./kubectl
   - sudo mv ./kubectl /usr/local/bin/kubectl
   - pwd 
-  - ls
+  - ls udagram-api-user
 install:
   - docker-compose -f docker-compose-build.yaml build --parallel 
