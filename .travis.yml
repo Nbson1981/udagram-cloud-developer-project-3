@@ -15,5 +15,6 @@ before_install:
   - chmod +x ./kubectl
   - sudo mv ./kubectl /usr/local/bin/kubectl
   - pwd 
+  - ls
 install:
   - docker-compose -f docker-compose-build.yaml build --parallel 
