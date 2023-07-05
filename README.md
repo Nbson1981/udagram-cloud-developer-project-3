@@ -1,5 +1,7 @@
 # Refactored Udagram App into Microservices
 
+[![Build Status](https://app.travis-ci.com/Nbson1981/udagram-cloud-developer-project-3.svg?branch=main)](https://app.travis-ci.com/Nbson1981/udagram-cloud-developer-project-3)
+
 Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
 
 The project is split into four parts:
