@@ -4,11 +4,11 @@ Udagram is a simple cloud application developed alongside the Udacity Cloud Engi
 
 The project is split into four parts:
 
-1. [The Deployment Handler](/udacity-c3-deployment), which manages deployment of the application to Kubernetes.
-2. [The Simple Frontend](/udacity-c3-frontend)
+1. [The Deployment Handler](/udagram-reverseproxy), which manages deployment of the application to Kubernetes.
+2. [The Simple Frontend](/udagram-frontend)
    A basic Ionic client web application which consumes the RestAPI Backend.
-3. [The RestAPI Backend User Microservice](/udacity-c3-restapi-user), a Node-Express microservice which manages users and can be deployed to a cloud service.
-4. [The RestAPI Backend Feed Microservice](/udacity-c3-restapi-feed), a Node-Express microservice which manages feeds and can be deployed to a cloud service.
+3. [The RestAPI Backend User Microservice](/udagram-api-user), a Node-Express microservice which manages users and can be deployed to a cloud service.
+4. [The RestAPI Backend Feed Microservice](/udagram-api-feed), a Node-Express microservice which manages feeds and can be deployed to a cloud service.
 
 ## Tasks
 
@@ -22,24 +22,24 @@ The project is split into four parts:
 #### Backend User Image
 
 1. Navigate to the udacity-c3-restapi-user/ directory.
-2. Build a docker image of the backend user microservice with `docker build -t {your_docker_hub_username}/udacity-restapi-user .`
+2. Build a docker image of the backend user microservice with `docker build -t {your_docker_hub_username}/udagram-api-user .`
 
 #### Backend Feed Image
 
 1. Navigate to the udacity-c3-restapi-feed/ directory.
-2. Build a docker image of the backend feed microservice with `docker build -t {your_docker_hub_username}/udacity-restapi-feed .`
+2. Build a docker image of the backend feed microservice with `docker build -t {your_docker_hub_username}/udagram-api-feed .`
 
 #### Frontend Image
 
 1. Navigate to the udacity-c3-frontend/ directory.
-2. Build a docker image of the frontend with `docker build -t {your_docker_hub_username}/udacity-frontend .`
+2. Build a docker image of the frontend with `docker build -t {your_docker_hub_username}/udagram-frontend .`
 
 ### Publish Images to Docker Hub
 
 1. Publish the reverseproxy image with `docker push {your_docker_hub_username}/reverseproxy`.
-2. Publish the backend user image with `docker push {your_docker_hub_username}/udacity-restapi-user`.
-3. Publish the backend feed image with `docker push {your_docker_hub_username}/udacity-restapi-feed`.
-4. Publish the backend feed image with `docker push {your_docker_hub_username}/udacity-frontend`.
+2. Publish the backend user image with `docker push {your_docker_hub_username}/udagram-api-user`.
+3. Publish the backend feed image with `docker push {your_docker_hub_username}/udagram-api-feed`.
+4. Publish the backend feed image with `docker push {your_docker_hub_username}/udagram-frontend`.
 
 ### My Docker Hub Url
 
