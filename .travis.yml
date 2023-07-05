@@ -16,4 +16,4 @@ before_install:
   - sudo mv ./kubectl /usr/local/bin/kubectl
 
 install:
-  - docker-compose -f /udagram-cloud-developer-project-3/docker-compose-build.yaml build --parallel 
+  - docker-compose -f udagram-cloud-developer-project-3/docker-compose-build.yaml build --parallel 
